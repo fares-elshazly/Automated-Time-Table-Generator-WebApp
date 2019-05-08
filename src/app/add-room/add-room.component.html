@@ -1,0 +1,40 @@
+<head>
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/util.css">
+  <!--===============================================================================================-->
+  </head>
+  <body>
+    
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <div class="login100-form-title" style="background-image: url(/assets/img/bg-01.jpg);">
+            <span class="login100-form-title-1">
+              Add Room
+            </span>
+          </div>
+  
+          <form class="login100-form validate-form" [formGroup]='RoomForm' (ngSubmit)="onRoomSubmit()">
+            <div class="wrap-input100 validate-input m-b-26" data-validate="">
+              <span class="label-input100">Room Type</span>
+              <input class="input100" type="text" name="RoomType" placeholder="Enter Room Type (Class / Laboratory)" formControlName="Type">
+              <span class="focus-input100"></span>
+            </div>
+  
+            <div class="wrap-input100 validate-input m-b-26" data-validate="">
+              <span class="label-input100">Room Name</span>
+              <input class="input100" type="text" name="RoomName" placeholder="Enter Room Name" formControlName="Name">
+              <span class="focus-input100"></span>
+            </div>
+  
+            <div class="container-login100-form-btn">
+              <button class="login100-form-btn" type="submit" [disabled]="!RoomForm.valid">
+                Add Room
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </body>

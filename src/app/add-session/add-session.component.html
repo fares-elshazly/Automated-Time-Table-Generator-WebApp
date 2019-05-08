@@ -1,0 +1,77 @@
+<head>
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="/assets/css/util.css">
+  <!--===============================================================================================-->
+</head>
+
+<body>
+
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <div class="login100-form-title" style="background-image: url(/assets/img/bg-01.jpg);">
+          <span class="login100-form-title-1">
+            Add Session
+          </span>
+        </div>
+
+        <form class="login100-form validate-form" [formGroup]='SessionForm' (ngSubmit)="onSessionSubmit()">
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Course ID</span>
+            <input class="input100" type="number" name="CourseID" placeholder="Enter Course ID" formControlName="CourseID">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Teacher ID</span>
+            <input class="input100" type="number" name="TeacherID" placeholder="Enter Teacher ID"
+              formControlName="TeacherID">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Room Name</span>
+            <input class="input100" type="text" name="RoomName" placeholder="Enter Room Name"
+              formControlName="RoomName">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Session Type</span>
+            <input class="input100" type="text" name="Type" placeholder="Enter Session Type (Lecture / Lab)"
+              formControlName="Type">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Session Name</span>
+            <input class="input100" type="text" name="Name" placeholder="Enter Session Name"
+              formControlName="Name">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Student's Year</span>
+            <input class="input100" type="text" name="Year" placeholder="Enter Student's Year"
+              formControlName="Year">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Session Duration</span>
+            <input class="input100" type="text" name="Duration" placeholder="Enter Session Duration"
+              formControlName="Duration">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" type="submit" [disabled]="!SessionForm.valid">
+              Add Session
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>

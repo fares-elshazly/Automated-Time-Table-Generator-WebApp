@@ -1,0 +1,52 @@
+<head>
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/util.css">
+  <!--===============================================================================================-->
+  </head>
+  <body>
+    
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <div class="login100-form-title" style="background-image: url(/assets/img/bg-01.jpg);">
+            <span class="login100-form-title-1">
+              Add Course
+            </span>
+          </div>
+  
+          <form class="login100-form validate-form" [formGroup]='CourseForm' (ngSubmit)="onCourseSubmit()">
+            <div class="wrap-input100 validate-input m-b-26" data-validate="">
+              <span class="label-input100">Course ID</span>
+              <input class="input100" type="number" name="CourseID" placeholder="Enter Course ID" formControlName="ID">
+              <span class="focus-input100"></span>
+            </div>
+  
+            <div class="wrap-input100 validate-input m-b-26" data-validate="">
+              <span class="label-input100">Course Name</span>
+              <input class="input100" type="text" name="CourseName" placeholder="Enter Course Name" formControlName="Name">
+              <span class="focus-input100"></span>
+            </div>
+  
+            <div class="wrap-input100 validate-input m-b-26" data-validate="">
+              <span class="label-input100">Number of Lectures</span>
+              <input class="input100" type="number" name="NumOfLectures" placeholder="Enter Course Number of Lectures" formControlName="NumOfLectures">
+              <span class="focus-input100"></span>
+            </div>
+  
+            <div class="wrap-input100 validate-input m-b-26" data-validate="">
+              <span class="label-input100">Number of Labs</span>
+              <input class="input100" type="text" name="NumOfLabs" placeholder="Enter Course Number of Labs" formControlName="NumOfLabs">
+              <span class="focus-input100"></span>
+            </div>
+  
+            <div class="container-login100-form-btn">
+              <button class="login100-form-btn" type="submit" [disabled]="!CourseForm.valid">
+                Add Course
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </body>
