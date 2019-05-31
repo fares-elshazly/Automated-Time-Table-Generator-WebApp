@@ -429,7 +429,7 @@ export class TableComponent implements OnInit {
             var EM = document.createElement("EM");
               EM.setAttribute("_ngcontent-c3", "");
               EM.setAttribute("class", "event-name");
-              EM.innerHTML = "<br /> <br />" + myObject.Name + "<br /> <br />Teacher ID : " + myObject.Teacher + "<br /> <br />Room Name: " + myObject.Room;
+              EM.innerHTML = "<br /> <br />" + myObject.Name + "<br /> <br />Teacher ID : " + myObject.Teacher + "<br /> <br />Room Name : " + myObject.Room;
           A.appendChild(EM);
         LI.appendChild(A);
       Day.appendChild(LI);
