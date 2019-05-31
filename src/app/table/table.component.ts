@@ -411,25 +411,6 @@ export class TableComponent implements OnInit {
 
   ShowTable() {
 
-    /*var Day = document.getElementById("Mon");
-      var LI = document.createElement("LI");
-        LI.setAttribute("_ngcontent-c1", "");
-        LI.setAttribute("class", "single-event");
-        LI.setAttribute("data-start", "8:00");
-        LI.setAttribute("data-end", "9:00");
-        LI.setAttribute("data-content", "event-abs-circuit");
-        LI.setAttribute("data-event", "event-1");
-          var A = document.createElement("A");
-            A.setAttribute("_ngcontent-c1", "");
-            A.setAttribute("href", "#0");
-            var EM = document.createElement("EM");
-              EM.setAttribute("_ngcontent-c1", "");
-              EM.setAttribute("class", "event-name");
-              EM.innerHTML = "Fares El-Shazly";
-          A.appendChild(EM);
-        LI.appendChild(A);
-      Day.appendChild(LI);*/
-
     console.log(this.Sessions.length);
 
     this.Sessions.forEach( (myObject) => {
@@ -445,14 +426,10 @@ export class TableComponent implements OnInit {
           var A = document.createElement("A");
             A.setAttribute("_ngcontent-c3", "");
             A.setAttribute("href", "#0");
-            var SPAN = document.createElement("SPAN");
-              SPAN.setAttribute("class", "event-date");
-              SPAN.innerHTML = myObject.From.toString()+":00" + " - " + myObject.To.toString()+":00";
             var EM = document.createElement("EM");
               EM.setAttribute("_ngcontent-c3", "");
               EM.setAttribute("class", "event-name");
-              EM.innerHTML = myObject.Name + "<br /> <br />" + myObject.Year;
-          //A.appendChild(SPAN);
+              EM.innerHTML = "<br /> <br />" + myObject.Name + "<br /> <br />Teacher ID : " + myObject.Teacher + "<br /> <br />Room Name: " + myObject.Room;
           A.appendChild(EM);
         LI.appendChild(A);
       Day.appendChild(LI);
@@ -475,6 +452,6 @@ export class TableComponent implements OnInit {
           }
       }
       console.log("Session Length : " + this.Sessions.length);
-  }
+    }
 
 }

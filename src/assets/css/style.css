@@ -264,7 +264,7 @@ ul.sidebar-menu , ul.sidebar-menu li ul.sub{
 }
 
 ul.sidebar-menu {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 #sidebar > ul > li > ul.sub {
@@ -387,7 +387,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .header {
-    position: relative;
+    position: fixed;
     left: 0;
     right: 0;
     z-index: 1002;
